@@ -111,7 +111,6 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
     RGBTRIPLE copy[height][width];
     int gx[height][width];
     int gy[height][width];
-    int sobel[height][width];
     int factor;
     int gfactor;
     double sobelval;
