@@ -1,0 +1,3 @@
+SELECT movies.title AS 'movie', ratings.rating AS 'rating'
+FROM movies JOIN ratings ON movies.id = ratings.movie_id
+WHERE movies.year = 2010 ORDER BY ratings.rating DESC;
