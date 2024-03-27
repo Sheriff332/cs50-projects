@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                let elements = document.getElementsByClassName('mcq');
+                for (let i = 0; i < elements.length; i++) {
+                    elements[i].addEventListener("click", function(event) {
+                        if (event.target.tagName == 'BUTTON' && elements[i].getAttribute('data-answered') == "false") {
+                            if (event.target.getAttribute('data-correct') == 'true') {
+                                event.target.style.backgroundColor = '#4cc24a';
+                            } else {
+                                event.target.style.backgroundColor = '#d43f35';
+                            }
+                            elements[i].setAttribute('data-answered', 'true');
+                        }
+                    });
+                    let answers2= document.getElementsByClassName('answerbox')
+                    let buttons2= document.querySelectorAll('button.freeresponse');
+
+                    for (let i = 0; i < buttons2.length; i++){
+                        buttons2[i].addEventListener('click', function() {
+                            let answer = answers2[i];
+                            if (answer.getAttribute('data-answer') == answer.value){
+                                buttons2[i].style.backgroundColor = '#4cc24a';
+                            } else {
+                                buttons2[i].style.backgroundColor = '#d43f35';
+                            }
+                            answers2[i].disabled= true;
+                        });
+                    }
+                }
+            });
+        </script>
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <div id="question1" class='mcq' data-answered="false">
+                    <h3>What is the capital city of Australia?</h3>
+                    <button data-correct="false">Sydney</button>
+                    <button data-correct="false">Melbourne</button>
+                    <button data-correct="true">Canberra</button>
+                    <button data-correct="false">Perth</button>
+                </div>
+
+                <div id="question2" class='mcq' data-answered="false">
+                    <h3>Who wrote the famous novel "To Kill a Mockingbird"?</h3>
+                    <button data-correct="false">J.K. Rowling</button>
+                    <button data-correct="true">Harper Lee</button>
+                    <button data-correct="false">Mark Twain</button>
+                    <button data-correct="false">Charles Dickens</button>
+                </div>
+
+                <div id="question3" class='mcq' data-answered="false">
+                    <h3>What is the chemical symbol for the element gold?</h3>
+                    <button data-correct="false">Fe</button>
+                    <button data-correct="false">Ag</button>
+                    <button data-correct="false">Pt</button>
+                    <button data-correct="true">Au</button>
+                </div>
+
+                <div id="question4" class='mcq' data-answered="false">
+                    <h3>In which year did the Titanic sink?</h3>
+                    <button data-correct="false">1910</button>
+                    <button data-correct="true">1912</button>
+                    <button data-correct="false">1914</button>
+                    <button data-correct="false">1920</button>
+                </div>
+
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                    <h3>What is the smallest bone in the human body?</h3>
+                    <input class='answerbox' placeholder='Answer here' data-answer='Stapes' type='text'></input>   <button class='freeresponse'>Check Answer</button>
+                    <h3>Who painted the Mona Lisa?</h3>
+                    <input class='answerbox' placeholder='Answer here' data-answer='Leonardo DaVinci' type='text'></input>   <button class='freeresponse'>Check Answer</button>
+            </div>
+        </div>
+    </body>
+</html>
