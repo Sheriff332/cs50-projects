@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Radioshack</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body style="background-color: black;">
+
+    <div class="container-fluid" style="border-bottom: 3px solid gray;">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark px-3"style="height: 75px;z-index: 2;">
+        <a class="navbar-brand" href="https://radioshack.com/">
+
+          <img class = "d-inline-block align-top" src="radioshack-logo.png" width="200" height="30" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse bg-dark" id="navbarNav">
+          <ul class="navbar-nav">
+            <div class="d-flex p-2"><a class="nav-item nav-link active " href="#">Home </a></div>
+            <div class="d-flex p-2">
+              <li class="nav-item dropdown dark-mode">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Products/Services
+                </a>
+                <div class="dropdown-menu drop " aria-labelledby="navbarDropdown">
+                  <div class="d-flex justify-content-between" >
+                    <div>
+                      <a class="dropdown-item" href="#">Electronics</a>
+                      <a class="dropdown-item" href="#">DIY And Hobby</a>
+                      <a class="dropdown-item" href="#">Radioshack Services</a>
+                    </div>
+                    <div>
+                      <a class="dropdown-item" href="#">Accessories</a>
+                      <a class="dropdown-item" href="#">Home And Office</a>
+                      <a class="dropdown-item" href="#">Gift Cards</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </div>
+            <div class="d-flex p-2" style="padding-top:20px;"><a class="nav-item nav-link " href="#aboutus">About Us</a></div>
+            <div id= 'Signin' class="d-flex p-2 right dark-mode "><a class="nav-item nav-link " href="#">
+              <div class="dropdown .signin-dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                  Sign In
+                </button>
+                <form data-bs-theme='dark' class="dropdown-menu dropdown-menu-end" style="width: 300px;">
+                  <div class="mb-3">
+                    <label for="exampleDropdownFormEmail2" class="form-label" style="padding-left: 10px;">Email address</label>
+                    <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleDropdownFormPassword2" class="form-label" style="padding-left: 10px;">Password</label>
+                    <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+                  </div>
+                  <div class="mb-3">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="dropdownCheck2" style="padding-left: 10px; margin-left: 1px;">
+                      <label class="form-check-label" style="padding-left: 10px;" for="dropdownCheck2">
+                        Remember me
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary" style="padding-left: 10px; margin-left: 10px;">Sign in</button>
+                </form>
+              </div>
+            </a></div>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div  class = "mb-3" style="display:flex; flex-direction:row">
+      <div style="flex: 1;padding: 20px;">
+        <h1 class="main-heading">Building Tomorrow's Technology Today - Start Your Journey with Radioshack</h1>
+      </div>
+      <div id="carouselStores" class="carousel slide carousel-fade" data-bs-ride="carousel" style="max-width: 800px; margin-left: auto; margin-right: 10px; height: 600px; overflow: hidden; flex: 1; padding: 20px;">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselStores" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselStores" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselStores" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img src="AP627482757736.webp" class="d-block w-100" alt="RadioShack Store">
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="METROCENTRO-ESA-20230718-145900.jpg" class="d-block w-100" alt="RadioShack Store">
+          </div>
+          <div class="carousel-item" >
+            <img src="Radio-Shack.webp" class="d-block w-100" alt="RadioShack Store">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselStores" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselStores" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div  class = "pb-3" style="display:flex; flex-direction:row; padding-left:20px">
+      <div style="white-space: nowrap;background-color:#495057; max-width: 600px; margin-right: auto; margin-left: 10px; max-height: 400px; border-radius: 10px; overflow-x: auto;">
+        <img src="radioshack-products/Bodegon-audifonos.png" class="img-class" alt="RadioShack Store" >
+        <img src="radioshack-products/BODEGON-GAMING.png" class="img-class" alt="RadioShack Store" >
+        <img src="radioshack-products/BODEGON-BATERIAS.png" class="img-class" alt="RadioShack Store" >
+        <img src="radioshack-products/Bodegon-PA.png" class="img-class" alt="RadioShack Store" >
+        <img src="radioshack-products/BODEGON-STREAMING-1.png" class="img-class" alt="RadioShack Store" >
+      </div>
+      <h1 class='main-heading' style="max-width: 800px; margin-left: auto; margin-right: 10px; max-height: 600px; overflow: hidden; flex: 1; padding: 20px;">
+        Explore Our wide range of Products and Services
+      </h1>
+    </div>
+    <div  class= "pb-3" style="background-color:#a42413;">
+      <h1 id='aboutus' class="centertext main-heading">ABOUT US</h1>
+      <div style="display:flex; flex-direction:row">
+        <img src="DSC08796-scaled.jpg" class="img-class" alt="RadioShack Store" style="padding-left:20px; border-radius: 5px;" >
+        <strong class="white" style="margin-left:100px; margin-right:80px">
+
+
+          RadioShack is an American chain of consumer electronics stores since 1921. In 2000 it began operations with Unicomer Group as franchisee in Central America as a North American style store selling technology products and accessories. In 2015, Unicomer Group acquired RadioShack International Brand, Intellectual Property and Franchise rights for Central America, South America, and the Caribbean. In 2023, Unicomer Group acquired RadioShack’s intellectual property assets and domains in about 70 countries around the world, including: the United States, Canada, Europe, and China; and aims to manage the business of technology products with excellence, generating long–term profitable relationships with our partners.
+
+          This acquisition consolidates Unicomer Group as the majority owner of the brand worldwide, leading the technology market and expanding its value offer for its clients.
+
+          We want to continue expanding the RadioShack brand, in as many territories as possible, creating support plans for operations, reaching our customers with our broad portfolio of products, looking for the best prices and constant innovation to provide solutions to technological problems.
+
+        </strong>
+      </div>
+    </div>
+
+    <h1 class="main-heading">Reviews</h1>
+    <div id="carouselReviews" class="carousel slide carousel-fade" data-bs-ride="carousel" style="max-width: 900px; margin-left: auto; margin-right: auto; height: 300px; overflow: hidden; flex: 1; padding: 20px;">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselReviews" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselReviews" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselReviews" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="reviews/review (1).png" class="d-block w-100" alt="RadioShack Store">
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="reviews/review (2).png" class="d-block w-100" alt="RadioShack Store">
+        </div>
+        <div class="carousel-item" >
+          <img src="reviews/review (3).png" class="d-block w-100" alt="RadioShack Store">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselReviews" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselReviews" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <h1 class="main-heading">You've got questions, we've got answers</h1>
+      <h1 class="white centertext mb-5"> Contact Us:</h1>
+    <div style=" display:flex; justify-content: space-between; flex-direction:row; width: 50%; margin-left:auto; margin-right:auto; margin-bottom:20px;">
+      <div><a class="white" style="text-decoration: none; transition: color 0.3s;"  onmouseover="this.style.color='#FA5C5C'" onmouseout="this.style.color='white'" href="https://radioshack.com/contact-us-dealer/">Dealer</a></div>
+      <div><a class="white" style="text-decoration: none; transition: color 0.3s;"  onmouseover="this.style.color='#FA5C5C'" onmouseout="this.style.color='white'" href="https://radioshack.com/contact-us-vendor/">Vendor</a></div>
+      <div><a class="white" style="text-decoration: none; transition: color 0.3s;"  onmouseover="this.style.color='#FA5C5C'" onmouseout="this.style.color='white'" href="https://radioshack.com/contact-us-customer/">Customer</a></div>
+    </div>
+
+    <!--Footer-->
+    <div class="container-fluid footer data-bs-theme='dark' bg-dark">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top" >
+        <div class="col mb-3">
+          <a class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none px-3" href="https://radioshack.com/">
+
+            <img class = "d-inline-block align-top " src="radioshack-logo.png" width="400" height="60" alt="">
+          </a>
+          <p class="text-body-secondary px-3 footer white" style="font-size: 0.8rem;bottom:0;">© 20XX Radioshack. All Rights Reserved.</p>
+        </div>
+
+        <div class="col mb-3">
+
+        </div>
+
+        <div class="col mb-3">
+          <h5 class='white'>Contact Us</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Business Address</a></li>
+            <li class="nav-item mb-2"><a href="tel:18332081176" class="nav-link p-0 text-body-secondary">Phone Number</a></li>
+            <li class="nav-item mb-2"><a href="mailto:customers@radioshack.com" class="nav-link p-0 text-body-secondary">Email Address</a></li>
+          </ul>
+        </div>
+
+        <div class="col mb-3">
+          <h5 class='white'>Site Links</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About Us</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Products/Services</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Testimonials</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Sitemap</a></li>
+          </ul>
+        </div>
+
+        <div class="col mb-3">
+          <h5 class='white'>Legal Information</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Privacy Policy</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Terms of Service</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Returns Policy</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Shipping Information</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var navbarCollapse = document.querySelector('.navbar-collapse');
+        if (navbarCollapse) {
+          navbarCollapse.addEventListener('show.bs.collapse', function() {
+            // Navbar is being collapsed
+            var signinElement = document.getElementById('Signin');
+            if (signinElement) {
+              signinElement.classList.remove('right');
+            }
+          });
+
+          navbarCollapse.addEventListener('hidden.bs.collapse', function() {
+            // Navbar is no longer collapsed
+            var signinElement = document.getElementById('Signin');
+            if (signinElement) {
+              signinElement.classList.add('right');
+            }
+          });
+        }
+      });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>
