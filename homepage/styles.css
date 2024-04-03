@@ -1,0 +1,46 @@
+smallthing{
+    font-size: 0.6rem;
+  }
+
+  .loading-text {
+    margin-bottom: 10px; /* Adjust spacing between text and spinner */
+  }
+
+  .loading-spinner {
+    border: 6px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #007bff; /* Change the color as needed */
+    border-radius: 50%;
+    width: 80px; /* Increase the width for a bigger spinner */
+    height: 80px; /* Increase the height for a bigger spinner */
+    animation: spin 1s linear infinite; /* Adjust the animation duration as needed */
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .lolimg{
+    max-height:500px;
+    max-width:375px;
+  }
+
+  .btn.outline {
+    background: none;
+    padding: 12px 22px;
+  }
+
+  .btn-primary.outline {
+    border: 2px solid #0099cc;
+    color: #0099cc;
+  }
+
+  .btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+    color: #33a6cc;
+    border-color: #33a6cc;
+  }
+  .btn-primary.outline:active, .btn-primary.outline.active {
+    border-color: #007299;
+    color: #007299;
+    box-shadow: none;
+  }

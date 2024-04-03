@@ -1,0 +1,7 @@
+<div>, <button>, <link>,<h(1 to 6)>, <form>, <label>, <input>, <small>, <script>, <span>, <p>, <img>, <ul>, <li>
+...
+CSS Properties:
+font-size, width, height, margin, border, color
+...
+JavaScript: Used to add interactivity to the buttons, updating the page based on user input. Used to add timed commands and custom alerts.
+Bootstrap: Utilized for responsive design and prebuilt components like buttons and forms.
