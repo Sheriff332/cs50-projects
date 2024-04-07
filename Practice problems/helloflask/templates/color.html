@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    {% if color in ['red','blue'] %}
+        <p style="color: {{ color }}">Your favorite color is {{ color }}.</p>
+    {% else %}
+        <p>You might be smart, but I'm smarter!</p>
+    {% endif %}
+{% endblock %}
