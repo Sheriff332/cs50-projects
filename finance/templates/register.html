@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+    <form action="/register" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="username" placeholder="Username" type="text">
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" name="password" placeholder="Password" type="password">
+            <div id='error' style="border-color: #f5c6cb; border-radius:10px; color: #721c24; background-color: #f8d7da;margin: auto; margin-top:10px; width:20%"></div>
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" name="passwordagain" placeholder="Password Again" type="password">
+        </div>
+        <button class="btn btn-primary" id='register' type="submit">Register</button>
+    </form>
+    <script>
+        document.querySelector('input[name="password"]').addEventListener('input', function(event) {
+            var passwrd=event.target.value;
+            if (passwrd==='' || (passwrd.length>=8 && passwrd.toLowerCase()!=passwrd && passwrd.toUpperCase()!=passwrd && /\d/.test(passwrd)))
+            {
+                document.getElementById("error").innerHTML = ""
+            }
+            else
+            {
+                document.getElementById("error").innerHTML = "Invalid Password, you must use:<br> Atleast 8 characters <br> Atleast one uppercase and lowercase letter <br> Atleast one number"
+            }
+        });
+    </script>
+{% endblock %}

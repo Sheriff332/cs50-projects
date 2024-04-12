@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    {% if bought==True%}
+    {% endif %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th class="text-start">Symbol</th>
+                <th class="text-end">Shares</th>
+                <th class="text-end">Price</th>
+                <th class="text-end">Transacted</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in data %}
+                <tr>
+                    <td style="text-align: left;">{{ item['symbol']|upper }}</td>
+                    <td style="text-align: right;">{% if item['type']=='sell' %}-{% endif %}{{ item['shares'] }}</td>
+                    <td style="text-align: right;">${{ prices[loop.index0] }}</td>
+                    <td style="text-align: right;">{{ item['transacted'] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
